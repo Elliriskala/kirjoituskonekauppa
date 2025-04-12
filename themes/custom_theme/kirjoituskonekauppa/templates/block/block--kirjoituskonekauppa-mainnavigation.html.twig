@@ -1,0 +1,11 @@
+<nav class="main-nav">
+  <ul>
+    {% for item in content['#items'] %}
+      <li>
+        <a href="{{ item.url }}" class="{% if item.in_active_trail %}is-active{% endif %}">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

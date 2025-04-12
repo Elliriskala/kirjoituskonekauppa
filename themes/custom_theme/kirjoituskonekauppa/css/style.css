@@ -1,0 +1,240 @@
+body, html {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5faff;
+    color: #1d3557;
+    margin: auto;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body.style {
+    padding-top: 10px;
+}
+
+.main-content {
+    width: 100%;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.breadcrumb__link {
+    color: white;
+}
+
+.product-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    margin: auto;
+}
+
+.product-image {
+    width: 300px;
+}
+
+.product-description {
+    margin-left: 220px;
+    margin-top: 30px;
+    width: 50%;
+}
+
+.field__label {
+    display: none;
+}
+
+.text-content .clearfix .field .field--name-body .field--type-text-with-summary .field--label-hidden .field__item {
+    margin-top: 30px;
+}
+
+.field__item img {
+    width: 50%;
+    max-height: 400px;
+    border-radius: 6px;
+    margin-left: 50px;
+}
+
+.wide-content .field .field--name-field-thumbnail .field--type-image .field--label-above {
+    width: 400px;
+}
+
+header.site-header {
+    justify-content: space-between;
+    background: linear-gradient(to top, #2b4f6b, #6ba5c7); /* gradient like in wireframe */
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+    border-bottom: none;
+    min-height: 0;
+}
+
+.site-header .logo-title, .hero-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-header .logo-title h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.site-branding {
+    background-image: none;
+}
+
+nav.main-nav {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem;
+    background: linear-gradient(to bottom, #2b4f6b, #6ba5c7);
+    width: 100%;
+    padding: 1rem;
+}
+
+nav.main-nav ul {
+    list-style: none;
+}
+
+nav.main-nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: opacity 0.3s;
+}
+
+nav.main-nav a:hover {
+    opacity: 0.8;
+}
+
+nav.main-nav a.is-active {
+    border-bottom: 2px solid #fff;
+}
+
+.hero-section {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.front-text {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-title h2 {
+    text-align: center;
+    color: #1d3557;
+    margin: 2rem auto 1rem;
+    padding: 1rem;
+    width: fit-content;
+}
+
+.service-category {
+    background: white;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    border-bottom: 4px solid #1d3557;
+    max-width: 1200px;
+}
+
+.service-category h3 {
+    color: #1d3557;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.service-category p {
+    text-align: center;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.views-view-grid--horizontal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    --views-grid--column-count: 3;
+}
+
+.views-view-grid__item {
+    flex: 0 1 300px;
+}
+
+.views-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.views-field {
+    background: #edf0f3;
+    padding: 1rem;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000f33;
+    margin: 1rem;
+}
+
+.views-field img {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.quality-info {
+    background: linear-gradient(to bottom, #153450, #3887b3);
+    text-align: center;
+    padding: 1.5rem;
+    font-style: italic;
+    color: white;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.site-footer {
+    background: linear-gradient(to top, #153450, #3887b3);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .site-logo-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .views-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

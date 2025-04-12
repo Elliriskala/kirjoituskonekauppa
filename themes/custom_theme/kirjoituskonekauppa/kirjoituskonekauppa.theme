@@ -1,0 +1,25 @@
+<?php
+
+function kirjoituskonekauppa_preprocess_page(&$variables) {
+  // Add custom theme class to <body>
+  $variables['attributes']['class'][] = 'kirjoituskonekauppa';
+
+  // Load and build the main menu manually
+  $menu_name = 'main';
+  $menu_tree = \Drupal::menuTree();
+
+  // Get current menu tree parameters
+  $parameters = $menu_tree->getCurrentRouteMenuTreeParameters($menu_name);
+
+  // Load and transform the menu tree
+  $tree = $menu_tree->load($menu_name, $parameters);
+  $manipulators = [
+    ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+    ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+  ];
+  $tree = $menu_tree->transform($tree, $manipulators);
+
+  // Build render array and pass to Twig
+  $variables['main_menu'] = $menu_tree->build($tree);
+}
+?>

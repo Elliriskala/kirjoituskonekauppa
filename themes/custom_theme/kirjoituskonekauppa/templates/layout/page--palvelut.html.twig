@@ -1,0 +1,26 @@
+{% extends "page.html.twig" %}
+
+{% block content %}
+  <section class="hero-section">
+    {{ page.hero }}
+  </section>
+
+  <section class="section-title">
+    <h2>Palvelumme</h2>
+  </section>
+
+  <section class="service-category huolto">
+    <h3>Huoltopalvelut</h3>
+    {{ drupal_view('palvelut_huolto', 'block_1') }}
+  </section>
+
+  <section class="service-category myynti">
+    <h3>Myyntipalvelut</h3>
+    {{ drupal_view('palvelut_myynti', 'block_1') }}
+  </section>
+
+  <section class="service-category entisointi">
+    <h3>Entisöintipalvelut</h3>
+    {{ drupal_view('palvelut_entisointi', 'block_1') }}
+  </section>
+{% endblock %}

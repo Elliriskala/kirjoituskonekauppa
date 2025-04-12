@@ -1,0 +1,36 @@
+{% extends "page.html.twig" %}
+
+{% block content %}
+    <section class="hero-section">
+        <p>Tervetuloa Kirjoituskonekauppaan – paikkaan, jossa perinteinen kirjoittaminen herää eloon!</p>
+    </section>
+
+    <section class="section-title">
+        <h2>Palvelumme</h2>
+        <p class="front-text">Kirjoituskonekauppa, Pärnänen & Pojat tarjoaa asiantuntevaa palvelua kaikenlaisiin kirjoituskoneisiin...</p>
+
+        <div class="views-row">
+            <a href="/drupal/palvelut/huolto" class="views-field">
+                <h3>🛠 Huolto</h3>
+                <img src="{{ directory }}/images/huolto.png" alt="Huolto"/>
+                <p>Pidä kirjoituskoneesi huippukunnossa mekaanisella huollolla.</p>
+            </a>
+
+            <a href="/drupal/palvelut/myynti" class="views-field">
+                <h3>🖋 Myynti</h3>
+                <img src="{{ directory }}/images/myynti.png" alt="Myynti"/>
+                <p>Laaja valikoima kunnostettuja kirjoituskoneita eri aikakausilta.</p>
+            </a>
+
+            <a href="/drupal/palvelut/entisointi" class="views-field">
+                <h3>🔧 Entisöinti</h3>
+                <img src="{{ directory }}/images/entisointi.png" alt="Entisöinti"/>
+                <p>Palautamme koneesi alkuperäiseen loistoonsa.</p>
+            </a>
+        </div>
+    </section>
+    <section class="quality-info">
+        <p>Perinteitä ja laatua jo vuodesta 1957</p>
+    </section>
+
+{% endblock %}

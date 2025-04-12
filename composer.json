@@ -23,6 +23,7 @@
         "drupal/core-vendor-hardening": "^10.4",
         "drupal/mahi": "^1.0",
         "drupal/tara": "^11.0",
+        "drupal/twig_tweak": "^3.4",
         "drupal/xara": "^11.0"
     },
     "conflict": {

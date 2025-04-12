@@ -1,0 +1,17 @@
+name: kirjoituskonekauppa
+description: 'Custom theme for kirjoituskonekauppa'
+type: theme
+core_version_requirement: ^10
+base theme: olivero
+package: Custom
+libraries:
+  - kirjoituskonekauppa/global-styling
+regions:
+  header: Header
+  primary_menu: Primary Menu
+  hero: Hero Section
+  content: Content
+  huolto_block: Huolto Block
+  myynti_block: Myynti Block
+  entisointi_block: Entisointi Block
+  footer: Footer

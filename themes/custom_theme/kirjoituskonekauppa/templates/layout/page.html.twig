@@ -1,0 +1,24 @@
+<header class="site-header">
+    {% if page.header %}
+        {{ page.header }}
+    {% else %}
+        <div class="logo-title">
+            <img src="{{ directory }}/images/logo.png" alt="Logo" />
+            <span>Kirjoituskonekauppa, Pärnänen & Pojat</span>
+        </div>
+    {% endif %}
+</header>
+
+<nav class="main-nav">
+    {{ main_menu }}
+</nav>
+
+<main class="main-content">
+    {% block content %}
+        {{ page.content }}
+    {% endblock %}
+</main>
+
+<footer class="site-footer">
+    <p>📍 Jääkärinkatu 9, Helsinki | 📞 09 323431267 | ✉️ info@kirjoituskonekauppa.fi</p>
+</footer>
